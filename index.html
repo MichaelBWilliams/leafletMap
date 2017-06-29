@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>A Leaflet map!</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<link rel="stylesheet" href="style/style.css" />
+	<link rel="stylesheet" href="plugins/leaflet.zoomhome.css"/>
+	<script src="plugins/leaflet.zoomhome.min.js"></script>
+	<link rel="stylesheet" href="plugins/Control.MiniMap.min.css">
+	<script src="plugins/Control.MiniMap.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="plugins/styledLayerControl.css">
+	<script src="plugins/styledLayerControl.js" type="text/javascript"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLBTwNOM2GYj4uGjYfD4bah0UGhK-l2Kc" async defer></script>
+	<script src='plugins/Leaflet.GoogleMutant.js'></script>
+  <style>
+	body {
+		padding: 10px;
+	  	margin: 0;
+		height: 100%;
+		width: 100%;
+	}
+	html {
+		height: 100%;
+	}
+	#map {
+		position: absolute;
+		top: 1%;
+		height: 98%;
+		width: 98%;
+		z-index: 1;
+	}
+  </style>
+</head>
+<body>
+
+  <div id="map"></div>
+	
+
+  <script src = "GeoJSON/LK_Adm1Exposure.js"></script>
+  <script src = "GeoJSON/LK_branchList.js"></script>
+  <script src = "style/exposure.js"></script>
+  <script src = "style/adm1Style.js"></script>
+  <script src = "script.js"></script>
+	
+</body>
+</html>
